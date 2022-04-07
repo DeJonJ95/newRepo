@@ -1,9 +1,20 @@
-let username;
-console.log(username)
+let username2;
+console.log(username2)
 
-document.getElementById("myButton").onclick = function (){
+document.getElementById("myButton2").onclick = function (){
+    username2 = document.getElementById("myText2").value;
+    console.log(username2)
+    document.getElementById("myLabel2").innerHTML = "Hello " + username2;
+     }
 
-    username = document.getElementById("myText").value;
-    console.log(username)
-    document.getElementById("myLabel").innerHTML = "Hello " + username;
-}
+let email;
+console.log(email)
+     
+document.getElementById("myButton2").onclick = function (){
+         email = document.getElementById("myEmail").value;
+         console.log(email)
+         document.getElementById("formifemail").innerHTML = "Hello " + email;
+          }
+
+          
+     

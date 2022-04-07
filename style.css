@@ -1,10 +1,107 @@
-.scroll {
+* {
+  background-color:antiquewhite ;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Hello world */
+h1 {
+    font-family: arial, sans-serif;
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: -0.1rem -0.1rem 0 #282626, 0.1rem -0.1rem 0 #282626, -0.1rem 0.1rem 0  #282626, 0.1rem 0.1rem 0 #282626;
+    transition: .1s;
+    text-align: center;
+  }
+  
+  h1:hover {
+    color: #000;
+  }
+
+  /* scroll */
+
+  .scroll {
     position: fixed;
 
-    inset: auto 2rem 2rem auto;
+    inset: auto auto 2rem 2rem;
 
     color: white;
     background: black;
     padding: 1em;
     box-shadow: 0 0 1em rgb(0 0 0 0);
+}
+
+/* ------ */
+/*utillity classes*/
+/* ------ */
+
+/* general */
+
+.JSP {
+  display: block;
+  text-align: center;
+  line-height: 200%;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 3rem);
+}
+
+/* Header */
+
+.primary-header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.primary-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.primary-navigation a {
+  text-decoration: none;
+}
+
+.primary-navigation a > [aria-hidden="true"] {
+  font-weight: 700;
+  margin-inline-end: .75em;
+}
+
+.ff-sans {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+@media (max-width: 35em) {
+  .primary-navigation {
+    position: fixed;
+    inset: 0 0 0 40%;
+
+    flex-direction: column;
+    padding: min(20vh, 10rem) 2rem;
+    background: hsl(0 0% 100% / .15);
+    backdrop-filter: blur(4rem);
+  }
+}
+
+/* form */
+
+#myLabel{
+  position: fixed;
+  padding-left: auto;
+  padding-right: auto;
 }

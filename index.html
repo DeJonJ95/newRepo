@@ -7,14 +7,74 @@
 
     <link rel="stylesheet" href="style.css">
     
-    <title>Document</title>
+    <title>Portfolio</title>
 </head>
-<body>
-    <a href="#top" class="scroll">Jump to top of page</a>
+<body class="Home">
+    <header class="primary-header flex">
+    <nav>
+        <ul 
+        id="primary-navigation" data-visible="false" class="primary-navigation flex">
+            <li class="active">
+                <a class="ff-sans" href="index.html">
+                    <span aria-hidden="true">00</span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a class="ff-sans" href="Services.html">
+                    <span aria-hidden="true">01</span>Services
+                </a>
+            </li>
+            <li>
+                <a class="ff-sans" href="Contact.html"><span aria-hidden="true">02</span>Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+    <h1>
+        HELLO, world!
+    </h1>
+   
 
-    <label id="myLabel">Enter your name:</label><br>
-    <input type="text" id="myText"><br>
-    <button type="button" id="myButton">Submit</button>
+    <br/>
+<div class="JSP">
+    <label id="myLabel2">Enter your name:</label><br>
+
+    <input type="text" id="myText2"><br>
+
+    <label for="formifemail">Enter your Email Address to receive our Weekly Newsletter</label> <br>
+
+    <input type="text" id="myEmail"><br>
+
+    <button type="button" id="myButton2">Submit</button>
+</div>  
+    <script>
+    var input = document.getElementById("myText2");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+       event.preventDefault();
+       document.getElementById("myButton2").click();
+      }
+    });
+    </script>
+
+<div class="cachu__container">
+
+    <!-- All sections are wrapped inside .cachu__sections  -->
+  
+    <div class="cachu__sections">
+      <section class="cachu__section">Some section</section>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <section class="cachu__section">Some section</section>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <section class="cachu__section">Some section</section>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+  
+    <!-- End of section  -->
+    <!-- Navigation will be dynamically added here (via JavaScript) -->
+  </div>
+
+    <a href="#top" class="scroll">Jump to top of page</a>
 
     <script src="index.js"></script>
 </body>
